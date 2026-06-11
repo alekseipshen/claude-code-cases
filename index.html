@@ -49,7 +49,7 @@ body.notes .tag{display:inline-flex}
 body.notes .pmode{display:block}
 
 /* title */
-.title-slide h1{max-width:16ch}
+.title-slide h1{max-width:21ch}
 .title-slide .sub{margin-top:1.8rem;font-size:clamp(1.05rem,1.7vw,1.5rem);color:var(--muted);max-width:42ch;line-height:1.5}
 .badge{display:inline-flex;align-items:center;gap:.6em;font-family:var(--mono);font-size:.78rem;color:var(--accent-soft);border:1px solid var(--line);border-radius:100px;padding:.5em 1.1em;margin-bottom:2rem;background:rgba(217,119,87,.06)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
@@ -59,16 +59,17 @@ body.notes .pmode{display:block}
 .title-slide .stats .l{font-family:var(--mono);font-size:.74rem;color:var(--faint);text-transform:uppercase;margin-top:.5rem;letter-spacing:.05em}
 
 /* PHILOSOPHY — где счастье */
-.happy{display:grid;grid-template-columns:1fr 1.1fr 1fr;grid-template-rows:1fr 1.2fr 1fr;gap:1.4vw;width:100%;height:78vh;align-items:center;justify-items:center}
-.role{background:linear-gradient(160deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:16px;padding:1.5rem 1.6rem;max-width:30ch;box-shadow:0 24px 50px -30px rgba(0,0,0,.6)}
+.happy{display:grid;grid-template-columns:1fr 1.1fr 1fr;grid-template-rows:1fr 1.1fr 1fr;gap:1.1vw;width:100%;height:80vh;align-items:center;justify-items:center}
+.role{background:linear-gradient(160deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:16px;padding:1.3rem 1.5rem;max-width:30ch;box-shadow:0 24px 50px -30px rgba(0,0,0,.6)}
 .role .rl{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.7rem}
 .role h4{font-size:clamp(1.3rem,2.1vw,1.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
 .role p{color:var(--muted);font-size:.96rem;line-height:1.45;margin-top:.6rem}
 .role .em{color:var(--accent-soft);font-weight:600}
-.r-top{grid-column:2;grid-row:1}.r-left{grid-column:1;grid-row:2}.r-right{grid-column:3;grid-row:2}
+.r-top{grid-column:2;grid-row:1}.r-left{grid-column:1;grid-row:2}.r-right{grid-column:3;grid-row:2}.r-bottom{grid-column:2;grid-row:3}
 .center-q{grid-column:2;grid-row:2;text-align:center}
-.center-q .qm{font-size:clamp(5rem,12vw,11rem);font-weight:900;color:var(--accent);line-height:.8;letter-spacing:-.04em;text-shadow:0 0 60px rgba(217,119,87,.35)}
-.center-q .qt{font-family:var(--mono);font-size:clamp(1rem,1.6vw,1.4rem);color:var(--text);letter-spacing:.05em;margin-top:1rem;text-transform:uppercase}
+.center-q .qm{font-size:clamp(3.4rem,8vw,7rem);font-weight:900;color:var(--accent);line-height:.8;letter-spacing:-.04em;text-shadow:0 0 60px rgba(217,119,87,.35)}
+.center-q .qt{font-family:var(--mono);font-size:clamp(1.3rem,2.2vw,2rem);color:var(--text);letter-spacing:.04em;margin-top:.7rem;text-transform:uppercase;font-weight:700}
+.center-q .qsub{font-family:var(--mono);font-size:clamp(.78rem,1.1vw,.95rem);color:var(--muted);letter-spacing:.08em;margin-top:.45rem;text-transform:uppercase}
 
 /* DIAGRAM — agents */
 .diagram{display:flex;align-items:center;gap:2.2vw;width:100%}
@@ -179,8 +180,8 @@ body.notes .pmode{display:block}
   <!-- 1 · TITLE -->
   <section class="slide title-slide" data-act="">
     <span class="badge"><span class="dot"></span>прямой эфир</span>
-    <h1>Команда моего агентства — <span class="accent">AI-агенты</span></h1>
-    <p class="sub">Веду 30+ клиентов один. Весь цикл — от разведки рынка до рекламы, которая оптимизирует себя ночью — держат агенты. И ту же систему я повернул на свою жизнь.</p>
+    <h1>Полная автоматизация маркетинга через <span class="accent">Claude Code</span></h1>
+    <p class="sub">От исследования рынка и создания креативов до запуска рекламы и её оптимизации — весь цикл держат агенты. И ту же систему я повернул на свою жизнь.</p>
     <div class="stats">
       <div><div class="n acc">30+</div><div class="l">клиентов</div></div>
       <div><div class="n">0</div><div class="l">людей в штате</div></div>
@@ -203,12 +204,18 @@ body.notes .pmode{display:block}
       </div>
       <div class="center-q">
         <div class="qm">?</div>
-        <div class="qt">где счастье</div>
+        <div class="qt">кто я?</div>
+        <div class="qsub">и где моё счастье</div>
       </div>
       <div class="role r-right">
         <div class="rl">я-фрилансер</div>
         <h4><span class="accent">20</span> агентов, 0 людей</h4>
         <p>Свобода и доход — уже сейчас. Один, из любой точки.</p>
+      </div>
+      <div class="role r-bottom">
+        <div class="rl">я-наёмный сотрудник</div>
+        <h4>Стабильная <span class="accent">зарплата</span></h4>
+        <p>Предсказуемость. Но чужие цели, потолок и ноль свободы.</p>
       </div>
     </div>
   </section>
@@ -220,7 +227,7 @@ body.notes .pmode{display:block}
       <div class="me-node">
         <div class="who"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></div>
         <h4>Я</h4>
-        <p>только встреча-<br>продажа</p>
+        <p>продажа + связь<br>с клиентом по ходу</p>
       </div>
       <div class="flow-arrow">━▶</div>
       <div class="agents-wrap">
